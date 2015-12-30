@@ -1,0 +1,15 @@
+HOST_IP=192.168.2.3
+SERVICE_HOST=192.168.2.3
+MYSQL_HOST=192.168.2.3
+RABBIT_HOST=192.168.2.3
+GLANCE_HOSTPORT=192.168.2.3:9292
+ADMIN_PASSWORD=secrete
+DATABASE_PASSWORD=secrete
+RABBIT_PASSWORD=secrete
+SERVICE_PASSWORD=secrete
+SERVICE_TOKEN=secrete
+
+# Do not use Nova-Network
+disable_service n-net
+# Enable Neutron
+ENABLED_SERVICES+=,q-svc,q-dhcp,q-meta,q-agt,q-l3
